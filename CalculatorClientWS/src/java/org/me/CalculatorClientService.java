@@ -22,7 +22,8 @@ public class CalculatorClientService {
         QName qname = new QName("http://calculator.me.org/", "CalculatorWSService");
         Service service = Service.create(url, qname);
         CalculatorWS calculator = service.getPort(CalculatorWS.class);
-        return calculator.add(i, j);
 
+        return calculator.add(i, j);
     }
+
 }
