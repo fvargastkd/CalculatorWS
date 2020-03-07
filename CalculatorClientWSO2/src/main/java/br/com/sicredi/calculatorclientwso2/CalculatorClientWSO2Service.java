@@ -4,6 +4,7 @@ import br.com.sicredi.oauth.TrustCertificate;
 import com.sun.jersey.client.urlconnection.HTTPSProperties;
 import java.net.URL;
 import java.security.SecureRandom;
+import java.security.Security;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
 import java.util.Arrays;
@@ -79,6 +80,7 @@ public class CalculatorClientWSO2Service {
         //Confiar no certificado utilizado na requisicao https
         TrustCertificate.allowAllCerts();
         //httpGETCollectionExample();
+        configuracaoSSL();
 
         Client cliente = ClientBuilder.newClient();
         Response response = null;
@@ -169,6 +171,17 @@ public class CalculatorClientWSO2Service {
         }
 
         return config;
+    }
+
+    public void configuracaoSSL() {
+        System.setProperty("sun.security.ssl.allowUnsafeRenegotiation", "true");
+        System.setProperty("java.protocol.handler.pkgs", "com.sun.net.ssl.internal.www.protocol");
+        Security.addProvider(new com.sun.net.ssl.internal.ssl.Provider());
+        System.setProperty("javax.net.ssl.trustStoreType", "JKS");
+        System.setProperty("javax.net.ssl.trustStore", "C:\\Temp\\LT9C1DYR2Servidor.jks");
+        System.setProperty("javax.net.ssl.keyStoreType", "PKCS12");
+        System.setProperty("javax.net.ssl.keyStore", "C:\\Temp\\LT9C1DYR2Servidor.cer");
+        System.setProperty("javax.net.ssl.keyStorePassword", "changeit");
     }
 
 }
