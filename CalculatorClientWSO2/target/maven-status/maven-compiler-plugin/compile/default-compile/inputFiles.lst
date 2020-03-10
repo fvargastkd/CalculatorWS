@@ -1,10 +1,13 @@
 C:\git\CalculatorWS\CalculatorClientWSO2\target\generated-sources\jaxws-wsimport\org\me\calculator\ObjectFactory.java
-C:\git\CalculatorWS\CalculatorClientWSO2\src\main\java\br\com\sicredi\calculatorclientwso2\CalculatorClientWSO2Service.java
 C:\git\CalculatorWS\CalculatorClientWSO2\src\main\java\br\com\sicredi\oauth\TrustCertificate.java
+C:\git\CalculatorWS\CalculatorClientWSO2\src\main\java\br\com\sicredi\calculatorclientwso2\TokenTest.java
 C:\git\CalculatorWS\CalculatorClientWSO2\target\generated-sources\jaxws-wsimport\org\me\calculator\package-info.java
+C:\git\CalculatorWS\CalculatorClientWSO2\src\main\java\br\com\sicredi\dto\AccessToken.java
 C:\git\CalculatorWS\CalculatorClientWSO2\src\main\java\br\com\sicredi\oauth\Base64Encoded.java
-C:\git\CalculatorWS\CalculatorClientWSO2\src\main\java\br\com\sicredi\dto\AddDto.java
 C:\git\CalculatorWS\CalculatorClientWSO2\target\generated-sources\jaxws-wsimport\org\me\calculator\CalculatorWS.java
+C:\git\CalculatorWS\CalculatorClientWSO2\src\main\java\br\com\sicredi\calculatorclientwso2\Token.java
 C:\git\CalculatorWS\CalculatorClientWSO2\target\generated-sources\jaxws-wsimport\org\me\calculator\Add.java
-C:\git\CalculatorWS\CalculatorClientWSO2\target\generated-sources\jaxws-wsimport\org\me\calculator\AddResponse.java
 C:\git\CalculatorWS\CalculatorClientWSO2\target\generated-sources\jaxws-wsimport\org\me\calculator\CalculatorWSService.java
+C:\git\CalculatorWS\CalculatorClientWSO2\src\main\java\br\com\sicredi\calculatorclientwso2\CalculatorClientWSO2Service.java
+C:\git\CalculatorWS\CalculatorClientWSO2\src\main\java\br\com\sicredi\dto\AddDto.java
+C:\git\CalculatorWS\CalculatorClientWSO2\target\generated-sources\jaxws-wsimport\org\me\calculator\AddResponse.java
