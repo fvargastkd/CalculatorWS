@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "CalculatorWSService", targetNamespace = "http://calculator.me.org/", wsdlLocation = "http://localhost:8080/CalculatorApp/CalculatorWSService?wsdl")
+@WebServiceClient(name = "CalculatorWSService", targetNamespace = "http://calculator.me.org/", wsdlLocation = "http://lt9c1dyr2:8080/App/CalculatorWSService?wsdl")
 public class CalculatorWSService
     extends Service
 {
@@ -30,7 +30,7 @@ public class CalculatorWSService
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("http://localhost:8080/CalculatorApp/CalculatorWSService?wsdl");
+            url = new URL("http://lt9c1dyr2:8080/App/CalculatorWSService?wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }

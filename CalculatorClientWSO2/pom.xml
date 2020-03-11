@@ -127,13 +127,13 @@
                         </goals>
                         <configuration>
                             <wsdlFiles>
-                                <wsdlFile>localhost_8080/CalculatorApp/CalculatorWSService.wsdl</wsdlFile>
+                                <wsdlFile>lt9c1dyr2_8080/App/CalculatorWSService.wsdl</wsdlFile>
                             </wsdlFiles>
                             <packageName></packageName>
                             <vmArgs>
                                 <vmArg>-Djavax.xml.accessExternalSchema=all</vmArg>
                             </vmArgs>
-                            <wsdlLocation>http://localhost:8080/CalculatorApp/CalculatorWSService?wsdl</wsdlLocation>
+                            <wsdlLocation>http://lt9c1dyr2:8080/App/CalculatorWSService?wsdl</wsdlLocation>
                             <staleFile>${project.build.directory}/jaxws/stale/CalculatorWSService.stale</staleFile>
                         </configuration>
                         <id>wsimport-generate-CalculatorWSService</id>

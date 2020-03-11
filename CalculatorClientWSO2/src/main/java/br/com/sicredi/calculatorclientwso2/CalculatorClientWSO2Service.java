@@ -26,11 +26,13 @@ public class CalculatorClientWSO2Service {
 
     @WebMethod(operationName = "add")
     public int add(@WebParam(name = "i") int i, @WebParam(name = "j") int j) throws Exception {
-        URL url = new URL("http://lt9c1dyr2:8080/CalculatorApp/CalculatorWSService?wsdl");
+        int retorno = 0;
+        URL url = new URL("http://lt9c1dyr2:8080/App/CalculatorWSService?wsdl");
         QName qname = new QName("http://calculator.me.org/", "CalculatorWSService");
         Service service = Service.create(url, qname);
         CalculatorWS calculator = service.getPort(CalculatorWS.class);
-        return calculator.add(i, j);
+        retorno = calculator.add(i, j);
+        return retorno;
     }
 
     @WebMethod(operationName = "addWSO2")
@@ -52,7 +54,7 @@ public class CalculatorClientWSO2Service {
         headers.put("Authorization", Arrays.asList("Bearer " + accessToken));
         BindingProvider bp = (BindingProvider) port;
         bp.getRequestContext().put(MessageContext.HTTP_REQUEST_HEADERS, headers);
-        bp.getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, "http://lt9c1dyr2:8280/calculator/1.0");
+        bp.getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, "http://lt9c1dyr2:8280/CalculatorWSService/1.0");
         return port;
     }
 
