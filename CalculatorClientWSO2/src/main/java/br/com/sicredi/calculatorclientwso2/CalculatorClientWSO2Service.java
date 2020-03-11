@@ -26,13 +26,11 @@ public class CalculatorClientWSO2Service {
 
     @WebMethod(operationName = "add")
     public int add(@WebParam(name = "i") int i, @WebParam(name = "j") int j) throws Exception {
-        int retorno = 0;
         URL url = new URL("http://lt9c1dyr2:8080/App/CalculatorWSService?wsdl");
         QName qname = new QName("http://calculator.me.org/", "CalculatorWSService");
         Service service = Service.create(url, qname);
         CalculatorWS calculator = service.getPort(CalculatorWS.class);
-        retorno = calculator.add(i, j);
-        return retorno;
+        return calculator.add(i, j);
     }
 
     @WebMethod(operationName = "addWSO2")
