@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://lt9c1dyr2:7001/App/CalculatorWSService?wsdl" uri="wsdl/lt9c1dyr2_7001/App/CalculatorWSService.wsdl"/>
+    <system systemId="http://lt9c1dyr2:7001/App/CalculatorWSService?xsd=1" uri="wsdl/lt9c1dyr2_7001/App/CalculatorWSService.xsd_1.xsd"/>
+</catalog>

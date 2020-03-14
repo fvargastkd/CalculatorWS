@@ -1,0 +1,16 @@
+
+build/web/META-INF/context.xml
+build/web/META-INF/MANIFEST.MF
+build/web/WEB-INF/classes/org/me/calculator/CalculatorWS.class
+build/web/WEB-INF/glassfish-web.xml
+build/web/WEB-INF/sun-web.xml
+dist/CalculatorApp.war
+nbproject/ant-deploy.xml
+nbproject/build-impl.xml
+nbproject/genfiles.properties
+nbproject/jax-ws.xml
+nbproject/jaxws-build.xml
+nbproject/private/private.properties
+nbproject/private/private.xml
+nbproject/project.properties
+nbproject/project.xml
