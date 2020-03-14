@@ -1,9 +1,9 @@
-# CalculatorWS
+# CalculatorWS - Projeto que mostrar como um webservice soap é exposto no wso2 e depois acessado por outro ws ou então uma aplicação web.
 
-CalculatorApp > WebService de exemplo escrito em Java
+calculatorapp > WebService de calculadora que apenas soma os números.
 
-CalculatorClientApp> Aplicação web que faz uso do webservice
+calculatorclientweb> Aplicação web que faz uso do webservice acessando diretamente ou pelo wso2.
 
-CalculatorClientWS> WebService cliente que executa o webservice de calculadora
+calculatorclientwso2> WebService cliente que executa o webservice de calculadora diretamente ou pelo wso2.
 
 
